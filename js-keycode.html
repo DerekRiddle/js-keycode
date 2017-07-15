@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS KeyCodes</title>
+    <link href="styles/styles.css" rel="stylesheet">
+</head>
+<body>
+<div class="wrapper">
+    <div id="keycode">KeyCode</div>
+    <div id="key">Key</div>
+</div>
+
+<script>
+
+    function replaceKeyCode(e) {
+        const keyCode = e.keyCode;
+        let key = e.key;
+        if (e.key === " ") {
+            key = '" "';
+        }
+        document.getElementById('keycode').textContent = keyCode.toString();
+        document.getElementById('key').textContent = key.toUpperCase();
+        console.log(e);
+    }
+
+    window.addEventListener('keydown', replaceKeyCode);
+</script>
+
+</body>
+</html>

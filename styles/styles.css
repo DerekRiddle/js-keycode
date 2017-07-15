@@ -1,0 +1,14 @@
+.wrapper {
+    text-align: center;
+    font-family:  "Courier New", sans-serif;
+    font-weight: bold;
+}
+
+#keycode {
+    font-size: 400px;
+}
+
+#key {
+    font-size: 225px;
+    font-weight: normal;
+}
